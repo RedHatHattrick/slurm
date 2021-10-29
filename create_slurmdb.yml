@@ -1,0 +1,11 @@
+---
+
+- name: Slurm Controller Create
+  become: true
+  hosts: slurmdbdservers
+  vars:
+#    slurm_roles: ['controller', 'exec', 'dbd']
+    slurm_roles: ['dbd']
+  roles:
+    - galaxyproject.slurm
+
