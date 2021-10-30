@@ -7,5 +7,6 @@
 #    slurm_roles: ['controller', 'exec', 'dbd']
     slurm_roles: ['controller']
   roles:
+    - rhel_common
     - galaxyproject.slurm
 
